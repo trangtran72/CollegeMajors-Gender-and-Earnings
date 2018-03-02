@@ -1,0 +1,62 @@
+---
+title: "Test GPA"
+author: "Trang Tran"
+date: "11/29/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,warning = FALSE)
+```
+
+```{r include=FALSE}
+setwd("~/Desktop")
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(car)
+install.packages("gvlma")
+Salary <- read.csv ("Salary.csv")
+```
+
+
+```{r}
+f <- lm(LogMedian ~ ShareWomen + Engineering, data=Salary)
+f2 <- lm(LogMedian ~ ShareWomen + Engineering, data=Salary[-c(1,8), ])
+Salary <- mutate(Salary, Engineering = ifelse(Major_category == "Engineering", "1", "0"))
+Salary <- mutate(Salary, LogMedian = log(Salary$Median))
+write.csv(Salary,'salary_edited.csv')
+write.csv(Top_10,'Top_10.csv')
+write.csv(Lowest_10,'Lowest_10.csv')
+
+Top_10 <- Salary[c(1:10), ]
+Lowest_10 <-Salary[c(164:173),]
+Top_10$Major<-as.factor(Top_10$Major)
+Top_10$Major_category<-as.factor(Top_10$Major_category)
+
+
+
+p1 <- Top_10 %>% ggplot(aes(Major_category,ShareWomen,fill=ShareWomen))
+p1
+summary (f2)
+vif(f) #No perfect multicollinearity
+mean(f$residuals)    #The mean of residuals is zero
+plot(f, which = 1)   #Line is flat, homoscedasticity
+durbinWatsonTest(f)  #There is some autocorrelation
+cor.test(Salary$ShareWomen, f$residuals)
+var(Salary$ShareWomen) 
+gvlma(f)
+gvlma(f2)
+
+par(mfrow=c(2,2)) # init 4 charts in 1 panel
+plot(f)
+
+
+gvlma(f, Salary)
+mean (f$residuals) #Mean of residuals is 0
+
+plot(f)
+
+```
+
