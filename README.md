@@ -10,7 +10,7 @@ The result of their project was published as [an article](https://fivethirtyeigh
 
 In this project, I will be using the cleaned dataset from Five Thirty Eight. However, instead of producing visualizations and tables as what they did for the article, I will be looking for a model, that can some how explains the median income. Additionally, I will create new variable(s) for my model.
 
-**Data**
+**Original Data**
 
 The original dataset is from American Community Survey 2010-2012 Public Use Microdata Series.
 
@@ -29,11 +29,7 @@ This file contains the first cleaned dataset from FiveThirtyEight
 This file contains the second cleaned dataset from FiveThirtyEight. *ShareOfWomen* was added
 
 
-`salary_edited.csv`
-
-My version of the data, combined from all-ages.csv and  . Added a new variable called *Engineering*, which takes value 1 if the major falls under category *Engineering*, and 0 otherwise.
+`salary_edited.csv` My version of the data, combined from all-ages.csv and  . Added a new variable called *Engineering*, which takes value 1 if the major falls under category *Engineering*, and 0 otherwise.
 
 
-`Predictive Modelling.pptx`
-
-This file contains the results of the project, and its supported visualizations. The result was given in a presentation for MATH 215 at Denison University
+`Predictive Modelling.pptx` This file contains the results of the project, and its supported visualizations. The result was given in a presentation for MATH 215 at Denison University
