@@ -24,7 +24,7 @@ Link to the documentation: http://www.census.gov/programs-surveys/acs/technical-
 
 **Cleaned dataset**
 
-Link to the cleaned csv by *FiveThirtyEight*: https://github.com/fivethirtyeight/data/blob/master/college-majors/all-ages.csv
+[Link](https://github.com/fivethirtyeight/data/blob/master/college-majors/all-ages.csv) to the cleaned csv by *FiveThirtyEight*
 
 all-ages.csv
 
