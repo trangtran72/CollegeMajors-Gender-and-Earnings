@@ -51,9 +51,13 @@ gvlma(f2)
 ```
 
 ```{r}
-#Experimenting with several graphs, and several statistical tests
+#Experimenting with several graphs
 p1 <- Top_10 %>% ggplot(aes(Major_category,ShareWomen,fill=ShareWomen))
 p1
+```
+
+```{r}
+#Experimenting with several statistical tests
 vif(f) #No perfect multicollinearity
 mean(f$residuals)    #The mean of residuals is zero
 plot(f, which = 1)   #Line is flat, homoscedasticity
