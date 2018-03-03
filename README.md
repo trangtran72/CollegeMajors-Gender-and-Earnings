@@ -18,18 +18,18 @@ In this project, I will be using the cleaned dataset from Five Thirty Eight. How
 
 The original dataset is from American Community Survey 2010-2012 Public Use Microdata Series.
 
-Link to the original data: http://www.census.gov/programs-surveys/acs/data/pums.html
+[Link]http://www.census.gov/programs-surveys/acs/data/pums.html to the original ACS data
 
-Link to the documentation: http://www.census.gov/programs-surveys/acs/technical-documentation/pums.html
+[Link]http://www.census.gov/programs-surveys/acs/technical-documentation/pums.html to the documentation
 
 **Cleaned dataset**
 
 [Link](https://github.com/fivethirtyeight/data/blob/master/college-majors/all-ages.csv) to the cleaned csv by *FiveThirtyEight*
 
-all-ages.csv
+`all-ages.csv`
 
 
-salary_edited.csv
+`salary_edited.csv`
 
 My version of the data, combined from all-ages.csv and  . Added a new variable called *Engineering*, which takes value 1 if the major falls under category *Engineering*, and 0 otherwise.
 
