@@ -23,10 +23,10 @@ The original dataset is from American Community Survey 2010-2012 Public Use Micr
 [Link](https://github.com/fivethirtyeight/data/blob/master/college-majors/all-ages.csv) to the cleaned csv by *FiveThirtyEight*
 
 `all-ages.csv`
-This file contains the first cleaned dataset from FiveThirtyEight
+This [file](https://github.com/fivethirtyeight/data/blob/master/college-majors/all-ages.csv) contains the first cleaned dataset from FiveThirtyEight
 
 `women-stem.csv`
-This file contains the second cleaned dataset from FiveThirtyEight. *ShareOfWomen* was added
+This [file](https://github.com/fivethirtyeight/data/blob/master/college-majors/women-stem.csv) contains the second cleaned dataset from FiveThirtyEight. *ShareOfWomen* was added
 
 
 `salary_edited.csv` My version of the data, combined from all-ages.csv and  . Added a new variable called *Engineering*, which takes value 1 if the major falls under category *Engineering*, and 0 otherwise.
