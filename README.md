@@ -27,3 +27,12 @@ Link to the documentation: http://www.census.gov/programs-surveys/acs/technical-
 Link to the cleaned csv by *FiveThirtyEight*: https://github.com/fivethirtyeight/data/blob/master/college-majors/all-ages.csv
 
 all-ages.csv
+
+
+salary_edited.csv
+
+My version of the data, combined from all-ages.csv and  . Added a new variable called *Engineering*, which takes value 1 if the major falls under category *Engineering*, and 0 otherwise.
+
+Predictive Modelling.pptx
+
+This file contains the results of the project, and its supported visualizations. The result was given in a presentation for MATH 215 at Denison University
