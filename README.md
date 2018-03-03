@@ -23,7 +23,7 @@ The original dataset is from American Community Survey 2010-2012 Public Use Micr
 [Link](https://github.com/fivethirtyeight/data/blob/master/college-majors/all-ages.csv) to the cleaned csv by *FiveThirtyEight*
 
 `all-ages.csv`
-
+This file contains the first cleaned dataset from FiveThirtyEight
 
 `salary_edited.csv`
 
