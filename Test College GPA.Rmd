@@ -31,22 +31,29 @@ Salary <- mutate(Salary, LogMedian = log(Salary$Median))
 ```
 
 ```{r}
+#Estimate the model of interest
 f <- lm(LogMedian ~ ShareWomen + Engineering, data=Salary)
+```
+
+```{r}
+#Testing for classical assumptions for a linear regression
+gvlma(f)
+
+#There are some violations!
+```
+
+```{r}
+#Remove the outliers, and check for the classical assumptions again
 f2 <- lm(LogMedian ~ ShareWomen + Engineering, data=Salary[-c(1,8), ])
-write.csv(Salary,'salary_edited.csv')
-write.csv(Top_10,'Top_10.csv')
-write.csv(Lowest_10,'Lowest_10.csv')
+summary (f2)
+gvlma(f2)
+#All passed!
+```
 
-Top_10 <- Salary[c(1:10), ]
-Lowest_10 <-Salary[c(164:173),]
-Top_10$Major<-as.factor(Top_10$Major)
-Top_10$Major_category<-as.factor(Top_10$Major_category)
-
-
-
+```{r}
+#Experimenting with several graphs, and several statistical tests
 p1 <- Top_10 %>% ggplot(aes(Major_category,ShareWomen,fill=ShareWomen))
 p1
-summary (f2)
 vif(f) #No perfect multicollinearity
 mean(f$residuals)    #The mean of residuals is zero
 plot(f, which = 1)   #Line is flat, homoscedasticity
@@ -55,15 +62,18 @@ cor.test(Salary$ShareWomen, f$residuals)
 var(Salary$ShareWomen) 
 gvlma(f)
 gvlma(f2)
-
 par(mfrow=c(2,2)) # init 4 charts in 1 panel
 plot(f)
-
-
-gvlma(f, Salary)
-mean (f$residuals) #Mean of residuals is 0
-
-plot(f)
-
 ```
 
+```{r}
+#Export individual files for Tableau
+Top_10 <- Salary[c(1:10), ]
+Lowest_10 <-Salary[c(164:173),]
+Top_10$Major<-as.factor(Top_10$Major)
+Top_10$Major_category<-as.factor(Top_10$Major_category)
+
+write.csv(Salary,'salary_edited.csv')
+write.csv(Top_10,'Top_10.csv')
+write.csv(Lowest_10,'Lowest_10.csv')
+```
