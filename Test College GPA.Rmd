@@ -17,7 +17,7 @@ library(ggplot2)
 library(knitr)
 library(car)
 install.packages("gvlma")
-Salary <- read.csv ("salary_edited.csv")
+Salary <- read.csv ("women-stem.csv")
 ```
 
 ```{r}
