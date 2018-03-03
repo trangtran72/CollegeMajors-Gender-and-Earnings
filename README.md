@@ -31,4 +31,6 @@ This [file](https://github.com/fivethirtyeight/data/blob/master/college-majors/w
 
 **Result**
 
+`Test College GPA.Rmd` The R script that I created to build and test my model of interest
+
 `Predictive Modelling.pptx` This file contains the results of the project, and its supported visualizations. The result was given in a presentation for MATH 215 at Denison University
