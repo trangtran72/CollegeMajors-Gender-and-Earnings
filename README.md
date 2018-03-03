@@ -2,7 +2,7 @@
 
 This repository contains information on the analysis about the effect of women's representation and college majors, on the average median incomes
 
-This project was an extension to the project done by *FiveThirtyEight*. 
+This project is an extension to the project done by *FiveThirtyEight*. 
 
 The [link](https://github.com/fivethirtyeight/data/tree/master/college-majors) to their repository
 
