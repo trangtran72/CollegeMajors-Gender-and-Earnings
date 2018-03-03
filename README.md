@@ -31,5 +31,6 @@ This file contains the second cleaned dataset from FiveThirtyEight. *ShareOfWome
 
 `salary_edited.csv` My version of the data, combined from all-ages.csv and  . Added a new variable called *Engineering*, which takes value 1 if the major falls under category *Engineering*, and 0 otherwise.
 
+**Result**
 
 `Predictive Modelling.pptx` This file contains the results of the project, and its supported visualizations. The result was given in a presentation for MATH 215 at Denison University
