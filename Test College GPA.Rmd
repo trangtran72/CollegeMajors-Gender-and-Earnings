@@ -20,12 +20,19 @@ install.packages("gvlma")
 Salary <- read.csv ("Salary.csv")
 ```
 
+```{r}
+#Create a dummy variable Engineering
+Salary <- mutate(Salary, Engineering = ifelse(Major_category == "Engineering", "1", "0"))
+```
+
+```{r}
+#Log the dependent variable
+Salary <- mutate(Salary, LogMedian = log(Salary$Median))
+```
 
 ```{r}
 f <- lm(LogMedian ~ ShareWomen + Engineering, data=Salary)
 f2 <- lm(LogMedian ~ ShareWomen + Engineering, data=Salary[-c(1,8), ])
-Salary <- mutate(Salary, Engineering = ifelse(Major_category == "Engineering", "1", "0"))
-Salary <- mutate(Salary, LogMedian = log(Salary$Median))
 write.csv(Salary,'salary_edited.csv')
 write.csv(Top_10,'Top_10.csv')
 write.csv(Lowest_10,'Lowest_10.csv')
