@@ -18,9 +18,9 @@ In this project, I will be using the cleaned dataset from Five Thirty Eight. How
 
 The original dataset is from American Community Survey 2010-2012 Public Use Microdata Series.
 
-[Link]http://www.census.gov/programs-surveys/acs/data/pums.html to the original ACS data
+[Link](http://www.census.gov/programs-surveys/acs/data/pums.html) to the original ACS data
 
-[Link]http://www.census.gov/programs-surveys/acs/technical-documentation/pums.html to the documentation
+[Link](http://www.census.gov/programs-surveys/acs/technical-documentation/pums.html) to the documentation
 
 **Cleaned dataset**
 
