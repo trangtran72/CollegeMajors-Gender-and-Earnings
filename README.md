@@ -6,7 +6,7 @@ This project was an extension to the project done by *FiveThirtyEight*.
 
 The [link](https://github.com/fivethirtyeight/data/tree/master/college-majors) to their repository
 
-The result of their project was published as [an article] (https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/) *The Economic Guide To Picking A College Major* on their website in 2014. 
+The result of their project was published as [an article](https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/) *The Economic Guide To Picking A College Major* on their website in 2014. 
 
 In this project, I will be using the cleaned dataset from Five Thirty Eight. However, instead of producing visualizations and tables as what they did for the article, I will be looking for a model, that can some how explains the median income. Additionally, I will create new variables for my model.
 
